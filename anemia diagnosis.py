@@ -10,7 +10,7 @@ RBC =float(input("Enter the rbc of the patient: "))
 R =float(input("Enter the reticulocycte in the rbc of the patient: "))
 
 #Compute
-MCV = (Hct * 10) / RBC
+MCV = (H * 10) / RBC
 Hb = (MCV * RBC) / 29.8
 RC = (R * 100) / 1000
 
