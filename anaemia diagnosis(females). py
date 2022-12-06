@@ -1,0 +1,24 @@
+This code will be used to diagnose anaemia in females 
+# Hb-Haemoglobin content in the blood 
+# Mcv-Mean corpiscular(cell) volume
+# Rc- Reticulocyte count 
+
+Hb = float(input("Enter the patient's haemoglobin: "))
+Mcv = float(input("Enter the mean cell volume: "))
+Rc = float(input("Enter the reticulocyte:  "))
+
+#Diagnosis
+import time
+
+time.sleep(6.0)
+print("Analysing...")
+
+#Diagnosis
+if (Hb < 12.0 and Rc < 0.2 and Mcv < 80):
+    print("Your MCV is low and the anaemia is due to the following; \n Iron deficiency secondary chronic blood loss \n Thalassemia")
+elif (Hb < 12.0 and Rc < 0.2 and 80 <= Mcv <= 100):
+    print("Your MCV is normal and the anaemia is due to the following; \n ACD \n Antiviral drugs \n Tumor in bone marrow \n Infection in bone marrow")
+elif (Hb < 12.0 and Rc < 0.2 and Mcv > 100):
+    print("Your MCV is high and the anaemia is due to the following; \n Medications \n Cancer chemotherapy \n B12 deficiency \n Folic acid deficiency \n Myelodysplasia \n Alcohol abuse \n Liver disease")
+else:
+    print("Diagnosis yet to be determined")
